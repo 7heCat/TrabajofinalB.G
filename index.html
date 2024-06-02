@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registro de Producto</title>
+    <link rel="stylesheet" href="styles3.css" />
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Registro de Producto</h1>
+        </div>
+        <div class="header-description">
+            <p>Llena la siguiente información para registrar un producto que buscas:</p>
+        </div>
+    </header>
+    <main>
+        <form id="productForm">
+            <fieldset>
+                <legend>Información del Producto</legend>
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label><br />
+                        <input type="text" id="name" name="name" required maxlength="20" /><br />
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Categoría:</label><br />
+                        <select id="category" name="category" required>
+                            <option value="">Seleccione una categoria</option>
+                            <option value="accion">Acción</option>
+                            <option value="animacion">Animación</option>
+                            <option value="aventura">Aventura</option>
+                            <option value="biografia">Biografía</option>
+                            <option value="comedia">Comedia</option>
+                            <option value="crimen">Crimen</option>
+                            <option value="drama">Drama</option>
+                            <option value="historia">Historia</option>
+                            <option value="horror">Horror</option>
+                            <option value="misterio">Misterio</option>
+                            <option value="romance">Romance</option>
+                            <option value="western">Western</option>
+                        </select><br />
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Imagen:</label><br />
+                        <select id="image" name="image" required>
+                            <option value="">Seleccione una imagen</option>
+                            <option value="https://sirse.info/wp-content/uploads/2015/05/cine541x311-800x500_c.jpg">Acción</option>
+                            <option value="https://sirse.info/wp-content/uploads/2015/05/cine541x311-800x500_c.jpg">Animación</option>
+                            <option value="https://sirse.info/wp-content/uploads/2015/05/cine541x311-800x500_c.jpg">Aventura</option>
+                            <option value="https://sirse.info/wp-content/uploads/2015/05/cine541x311-800x500_c.jpg">Biografía</option>
+                            <option value="https://sirse.info/wp-content/uploads/2015/05/cine541x311-800x500_c.jpg">Comedia</option>
+                            <option value="https://sirse.info/wp-content/uploads/2015/05/cine541x311-800x500_c.jpg">Crimen</option>
+                            <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bobina_de_cine.jpg/300px-Bobina_de_cine.jpg">Drama</option>
+                            <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bobina_de_cine.jpg/300px-Bobina_de_cine.jpg">Historia</option>
+                            <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bobina_de_cine.jpg/300px-Bobina_de_cine.jpg">Horror</option>
+                            <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bobina_de_cine.jpg/300px-Bobina_de_cine.jpg">Misterio</option>
+                            <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bobina_de_cine.jpg/300px-Bobina_de_cine.jpg">Romance</option>
+                            <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bobina_de_cine.jpg/300px-Bobina_de_cine.jpg">Western</option>
+                        </select><br />
+                    </div>
+                    <div class="form-group">
+                        <label for="code">Código de Producto:</label><br />
+                        <input type="text" id="code" name="code" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d.*\d)[A-Za-z\d]{8,}$" /><br />
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Precio:</label><br />
+                        <input type="number" id="price" name="price" required /><br />
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Año de estreno:</label><br />
+                        <input type="number" id="year" name="year" required /><br />
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Duración:</label><br />
+                        <input type="text" id="duration" name="duration" required /><br />
+                    </div>
+                    <div class="button-container">
+                        <button type="button" id="registerBtn">Registrar</button>
+                        <button type="button" id="resetBtn">Limpiar Campos</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <footer>
+            <button onclick="location.href='indicaciones.html'">Ir a las Indicaciones</button>
+            <button onclick="location.href='Vistadeproductos.html'">Ir a los productos</button>
+            <button onclick="location.href='Buscador.html'">Buscar un producto</button>
+        </footer>
+        <script src="principal.js"></script>
+    </main>
+</body>
+</html>

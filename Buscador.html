@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Buscador</title>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+      <div class="titulo-container">
+        <h1 class="titulopri">Buscador</h1>
+      </header>
+      </div>
+    <div class="inputs-container">
+        <form id="searchForm">
+            <input type="text" id="searchName" placeholder="Nombre" />
+            <input type="text" id="categoria" placeholder="Categoria" />
+            <input type="text" id="codeproducct" placeholder="codigo del producto" />
+            <input type="text" id="estreno" placeholder="Año de estreno" />
+            <div class="botones-container">
+                <button type="submit" onclick="handleSubmit(event)">Filtrar</button>
+                <button type="reset" onclick="handleReset()">Limpiar</button>
+            </div>
+        </form>
+      </div>
+      <table id="resultsTable">
+        <thead>
+          <tr>
+            <th class="titulo">Imagen</th>
+            <th class="titulo">Nombre</th>
+            <th class="titulo">Categoría</th>
+            <th class="titulo">Código Producto</th>
+            <th class="titulo">Precio</th>
+            <th class="titulo">Año de Estreno</th>
+            <th class="titulo">Duración</th>
+          </tr>
+        </thead>
+        <tbody id="resultsBody">
+          <tr>
+            <td class="filtro1"><img src="" width="100" height="100" /></td>
+            <td class="filtro1"></td>
+            <td class="filtro1""></td>
+            <td class="filtro1""></td>
+            <td class="filtro1"></td>
+            <td class="filtro1"></td>
+            <td class="filtro1"></td>
+          </tr>
+          <tr>
+            <td class="filtro2"><img src="" width="100" height="100" /></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+          </tr>
+          <tr>
+             <td class="filtro1"><img src="" width="100" height="100" /></td>
+            <td class="filtro1"></td>
+            <td class="filtro1""></td>
+            <td class="filtro1""></td>
+            <td class="filtro1"></td>
+            <td class="filtro1"></td>
+            <td class="filtro1"></td>
+          </tr>
+          <tr>
+            <td class="filtro2"><img src="" width="100" height="100" /></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+          </tr>
+          <tr>
+            <td class="filtro1"><img src="" width="100" height="100" /></td>
+            <td class="filtro1"></td>
+            <td class="filtro1""></td>
+            <td class="filtro1""></td>
+            <td class="filtro1"></td>
+            <td class="filtro1"></td>
+            <td class="filtro1"></td>
+          </tr>
+          <tr>
+            <td class="filtro2"><img src="" width="100" height="100" /></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+          </tr>
+          <tr>
+            <td class="filtro1"><img src="" width="100" height="100" /></td>
+            <td class="filtro1"></td>
+            <td class="filtro1""></td>
+            <td class="filtro1""></td>
+            <td class="filtro1"></td>
+            <td class="filtro1"></td>
+            <td class="filtro1"></td>
+          </tr>
+          <tr>
+            <td class="filtro2"><img src="" width="100" height="100" /></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+          </tr>
+          <tr>
+            <td class="filtro1"><img src="" width="100" height="100" /></td>
+            <td class="filtro1"></td>
+            <td class="filtro1""></td>
+            <td class="filtro1""></td>
+            <td class="filtro1"></td>
+            <td class="filtro1"></td>
+            <td class="filtro1"></td>
+          </tr>
+          <tr>
+            <td class="filtro2"><img src="" width="100" height="100" /></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+            <td class="filtro2"></td>
+          </tr>
+          <tr>
+            <th class="titulo">Imagen</th>
+            <th class="titulo">Nombre</th>
+            <th class="titulo">Categoría</th>
+            <th class="titulo">Código Producto</th>
+            <th class="titulo">Precio</th>
+            <th class="titulo">Año de Estreno</th>
+            <th class="titulo">Duración</th>
+          </tr>
+        </tbody>
+      </table>
+      <div class="pagination-container">
+        <button id="prevPage" disabled>Página Anterior</button>
+        <div class="pageNum-container">
+            <span id="pageNum">1</span>
+        </div>
+        <button id="nextPage">Página Siguiente</button>
+    </div>
+    <footer>
+        <nav>
+            <button onclick="location.href='Vistadeproductos.html'">Regresar a la Vista de Productos</button>
+        </nav>
+    </footer>
+</main>
+<script src="principal.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body {
+  background-color: yellow;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+nav {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.titulo {
+  background-color: aquamarine;
+  color: white;
+  border: 2px solid black;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+#filas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-box {
+  border: 2px solid black;
+  background-color: aquamarine;
+  padding: 10px;
+  margin: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  background-color: #87cefa;
+  padding: 10px;
+  width: 200px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.pagination-container {
+  background-color: #add8e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 350px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+.pagination-container button {
+  padding: 10px 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: aqua;
+  color: white;
+  border: none;
+}
+
+.pagination-container button:hover {
+  background: aqua;
+}
+
+.pageNum-container {
+  background-color: #87cefa;
+  padding: 5px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#pageNum {
+  color: white;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+footer {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+footer button {
+  background-color: yellow;
+  padding: 10px 20px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: green;
+}

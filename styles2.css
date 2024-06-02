@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+.titulo-container {
+  background-color: yellow;
+  text-align: center;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+.inputs-container {
+  background-color: yellow;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inputs-container input {
+  margin: 5px;
+  padding: 5px;
+}
+
+.botones-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.botones-container button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.pagination-container {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.pagination-container button {
+  background-color: aqua;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.pageNum-container {
+  background-color: gold;
+  padding: 5px 10px;
+  border: 2px solid black;
+}
+
+footer {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+footer button {
+  background-color: yellow;
+  padding: 10px 20px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: green;
+}
